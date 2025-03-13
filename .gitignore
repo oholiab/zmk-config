@@ -1,0 +1,9 @@
+.west/
+build_*/
+modules/
+*.uf2
+zephyr-sdk-*/
+zephyr-sdk-*.tar.xz
+zephyr/
+zmk/
+
