@@ -1,7 +1,18 @@
 ZEPHYR_SDK_VERSION:=0.17.0
 ARCH:=$(shell uname -m)
+ifeq ($(ARCH),arm64)
+	ARCH=aarch64
+endif
+PLATFORM:=$(shell uname)
+ifeq ($(PLATFORM),Darwin)
+	OS = macos
+else ifeq ($(PLATFORM),Linux)
+	OS = linux
+else
+	OS = unknown
+endif
 ZEPHYR_SDK:=zephyr-sdk-$(ZEPHYR_SDK_VERSION)
-ZEPHYR_SDK_ARCHIVE:=$(ZEPHYR_SDK)_linux-$(ARCH).tar.xz
+ZEPHYR_SDK_ARCHIVE:=$(ZEPHYR_SDK)_$(OS)-$(ARCH).tar.xz
 
 default: build
 
@@ -13,7 +24,7 @@ $(ZEPHYR_SDK): $(ZEPHYR_SDK_ARCHIVE)
 	tar xvf $(ZEPHYR_SDK_ARCHIVE)
 
 $(ZEPHYR_SDK)/.installed: $(ZEPHYR_SDK)
-	cd $<; ./setup.sh && touch $@
+	cd $<; ./setup.sh && touch .installed
 
 .west:
 	west init -l config
