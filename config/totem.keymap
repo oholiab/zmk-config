@@ -66,8 +66,8 @@
             display-name = "Nav";
             bindings = <
               &kp NUMBER_1       &kp NUMBER_2     &kp NUMBER_3  &kp NUMBER_4     &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-              &kp LEFT_SHIFT     &kp LEFT         &kp DOWN      &kp SLASH        &kp LBKT        &kp RBKT      &kp PG_DN     &kp PG_UP     &kp NUMBER_6  &kp MINUS
-&kp TILDE     &kp LEFT_WIN       &kp MINUS        &trans        &kp PLUS         &kp LPAR        &kp RPAR      &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT  &kp PLUS
+              &kp ESCAPE     &kp LEFT         &kp DOWN      &kp SLASH        &kp LBKT        &kp RBKT      &kp PG_DN     &kp PG_UP     &kp NUMBER_6  &kp MINUS
+&kp GRAVE     &kp LEFT_WIN       &kp MINUS        &trans        &kp PLUS         &kp LPAR        &kp RPAR      &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT  &kp PLUS
                                          &trans        &trans     &trans      &trans    &trans        &kp DOT
             >;
         };
@@ -76,8 +76,8 @@
             display-name = "Sym";
             bindings = <
                 &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp KP_ASTERISK  &kp LPAR  &kp RPAR
-                &trans    &trans  &trans    &trans      &trans         &trans     &kp MINUS         &kp EQUAL           &trans   &trans
-&studio_unlock  &trans    &trans  &trans    &trans      &trans         &trans  &kp UNDER      &kp PLUS           &trans   &kp SLASH  &kp HOME
+                &trans    &trans  &trans    &trans      &trans         &kp GRAVE  &kp MINUS         &kp EQUAL     &kp APOSTROPHE   &trans
+&studio_unlock  &trans    &trans  &trans    &trans      &trans         &kp TILDE  &kp UNDER      &kp PLUS         &kp DQT   &kp SLASH  &kp HOME
                                   &trans    &trans      &trans         &trans     &trans         &trans
             >;
         };
