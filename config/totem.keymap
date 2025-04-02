@@ -76,7 +76,7 @@
             display-name = "Sym";
             bindings = <
                 &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp KP_ASTERISK  &kp LPAR  &kp RPAR
-                &trans    &trans  &trans    &trans      &trans         &kp PG_UP  &kp MINUS         &kp EQUAL     &kp APOSTROPHE   &trans
+                &trans    &trans  &trans    &trans      &trans         &kp PG_UP  &kp MINUS         &kp EQUAL     &kp APOSTROPHE   &kp DQT
 &studio_unlock  &trans    &trans  &trans    &trans      &trans         &kp PG_DN  &kp LEFT      &kp DOWN         &kp UP   &kp RIGHT  &kp HOME
                                   &trans    &trans      &trans         &trans     &trans         &trans
             >;
