@@ -67,7 +67,7 @@
             bindings = <
               &kp NUMBER_1       &kp NUMBER_2     &kp NUMBER_3  &kp NUMBER_4     &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
               &kp ESCAPE     &kp LEFT         &kp MINUS      &kp SLASH        &kp LBKT        &kp RBKT      &kp PG_DN     &kp PG_UP     &kp NUMBER_6  &kp MINUS
-&kp GRAVE     &kp LEFT_WIN       &kp MINUS        &kp UNDER        &kp PLUS         &kp LPAR        &kp RPAR      &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT  &kp PLUS
+&kp GRAVE     &kp LEFT_WIN       &kp MINUS        &kp UNDER        &kp PLUS         &kp LBRC        &kp RBRC      &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT  &kp PLUS
                                          &trans        &trans     &trans      &trans    &trans        &kp DOT
             >;
         };
